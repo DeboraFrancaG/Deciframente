@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DecifraMente</title>
+
+    <!-- Fonte do site -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Conexão com CSS e JavaScript -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- MENU SUPERIOR -->
+    <header>
+        <a href="#inicio" class="logo">✿ DecifraMente</a>
+
+        <nav>
+            <a href="#historia">História</a>
+            <a href="#ciencia">Neurociência</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#dicas">Dicas</a>
+        </nav>
+    </header>
+
+
+    <!-- CAPA PRINCIPAL -->
+    <section class="capa" id="inicio">
+
+        <div class="capa-texto">
+
+            <span class="etiqueta">NEUROCIÊNCIA • TECNOLOGIA • COMPORTAMENTO</span>
+
+            <h1>Decifra<br><span>Mente.</span></h1>
+
+            <h3>Até onde nossa mente consegue acompanhar tantas demandas?</h3>
+
+            <p>
+                Um espaço para compreender os impactos da sobrecarga
+                mental na vida de jovens universitários.
+            </p>
+
+            <a href="#historia" class="botao">Explorar projeto ↓</a>
+
+        </div>
+
+        <!-- ALTERAR AQUI: imagem principal da estudante -->
+        <div class="capa-imagem">
+            <img src="imagens/capa.png" alt="Estudante diante do computador">
+            <span class="aba aba1">🎓 Faculdade</span>
+            <span class="aba aba2">💼 Trabalho</span>
+            <span class="aba aba3">♡ Vida pessoal</span>
+            <span class="aba aba4">☾ Descanso</span>
+        </div>
+
+    </section>
+
+
+    <!-- HISTÓRIA EM QUADRINHOS -->
+    <section class="secao" id="historia">
+
+        <span class="etiqueta">01 · HISTÓRIA EM QUADRINHOS</span>
+
+        <h2>Uma mente, muitas abas abertas.</h2>
+
+        <p>
+            Conheça a história de uma jovem universitária que tenta
+            equilibrar estudos, trabalho e vida pessoal.
+        </p>
+
+        <div class="historia-card">
+
+            <!-- ALTERAR AQUI: substitua pela capa real do quadrinho -->
+            <img src="imagens/quadrinho-01.png" alt="Prévia da história em quadrinhos">
+
+            <div class="historia-info">
+
+                <h3>Uma rotina, várias responsabilidades.</h3>
+
+                <p>
+                    Quando muitas tarefas se acumulam, nossa mente
+                    também sente os impactos.
+                </p>
+
+                <!-- Abre a história ampliada -->
+                <button class="botao" id="abrirHistoria">
+                    Ler história completa →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JANELA AMPLIADA DA HISTÓRIA -->
+    <div class="modal" id="modalHistoria">
+
+        <div class="modal-conteudo">
+
+            <button class="fechar" id="fecharHistoria" aria-label="Fechar">
+                ✕
+            </button>
+
+            <span class="etiqueta">NOSSA HISTÓRIA</span>
+
+            <h2>A vida em abas.</h2>
+
+            <!-- OPÇÃO 1: HISTÓRIA EM FOTOS -->
+
+            <div class="arquivo-historia">
+
+                <h3>Leia a história em quadrinhos</h3>
+
+                <!-- ALTERAR AQUI: adicione as imagens reais -->
+                <img src="imagens/quadrinho-01.jpeg" alt="Primeira página do quadrinho">
+
+                <img src="imagens/quadrinho-02.jpeg" alt="Segunda página do quadrinho">
+
+                <img src="imagens/quadrinho-03.jpeg" alt="Segunda página do quadrinho">
+
+
+            </div>
+
+            <!-- OPÇÃO 2: HISTÓRIA EM PDF -->
+
+            <!-- <div class="arquivo-pdf">
+
+            <h3>Ou visualize o arquivo PDF</h3>
+
+            -- ALTERAR AQUI: caminho do PDF --
+            <iframe
+                src="documentos/historia.pdf"
+                title="História em quadrinhos em PDF">
+            </iframe>
+
+            <a href="documentos/historia.pdf"
+               target="_blank"
+               class="link-arquivo">
+                Abrir PDF em outra janela ↗
+            </a> -->
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <!-- EXPLICAÇÃO CIENTÍFICA -->
+    <section class="secao ciencia" id="ciencia">
+
+        <span class="etiqueta">02 · NEUROCIÊNCIA COMPORTAMENTAL</span>
+
+        <h2>O que acontece com nosso cérebro?</h2>
+
+        <div class="ciencia-card">
+
+            <div class="cerebro">🧠</div>
+
+            <div>
+                <!-- Primeiro parágrafo: sempre visível -->
+                <p>
+                    O excesso de tarefas, estímulos e preocupações pode
+                    contribuir para a sobrecarga cognitiva, afetando
+                    processos como atenção, memória de trabalho e aprendizagem.
+                    Quando tentamos lidar com muitas informações ao mesmo
+                    tempo, podemos encontrar dificuldades para manter o foco
+                    e organizar nossas prioridades.
+                    Por isso, colocar as tarefas no papel ajuda: em vez de tentar lembrar de tudo, conseguimos
+                    visualizar nossas
+                    responsabilidades e direcionar melhor nossa atenção.
+                </p>
+
+                <!-- Parágrafos escondidos: aparecem ao clicar em "Ler mais" -->
+                <div class="ciencia-extra" id="cienciaExtra" hidden>
+
+                    <p>
+                        Mas planejar é apenas o primeiro passo. Para transformar uma ação em hábito, precisamos repeti-la.
+                        Nosso cérebro possui a
+                        capacidade de se adaptar por meio da neuroplasticidade, fortalecendo conexões entre neurônios
+                        conforme aprendemos e praticamos
+                        comportamentos. Assim, começar estudando 15 minutos por dia, organizar a agenda todas as noites ou
+                        separar um horário para
+                        descansar são pequenas atitudes que, quando repetidas em contextos semelhantes, podem se tornar cada
+                        vez mais naturais.
+                    </p>
+
+                    <p>
+                        A diferença está na maneira de construir a rotina: enquanto a sobrecarga é alimentada pelo acúmulo de
+                        responsabilidades,
+                        falta de organização, distrações e ausência de descanso, uma rotina mentalmente mais saudável é
+                        construída com planejamento
+                        realista, prioridades, períodos de concentração, pausas, sono adequado, lazer e convivência social. Você
+                        não precisa mudar tudo
+                        de uma vez: comece pequeno, mantenha a constância e respeite seus limites. Afinal, o objetivo não é ter
+                        uma rotina perfeita,
+                        mas construir uma vida mais equilibrada e sustentável.
+                    </p>
+
+                </div>
+
+                <!-- Botão que mostra/esconde o restante do texto -->
+                <button class="botao ler-mais" id="btnLerMais" aria-expanded="false" aria-controls="cienciaExtra">
+                    Ler mais ↓
+                </button>
+            </div>
+
+        </div>
+
+        <div class="escolha">
+            <h3>Por que escolhemos uma história em quadrinhos?</h3>
+
+            <p>
+                Escolhemos esse formato para transformar situações comuns
+                da vida universitária em uma narrativa visual, acessível
+                e fácil de reconhecer. As várias abas representam as
+                demandas que disputam nossa atenção.
+            </p>
+
+    </section>
+
+
+    <!-- QUIZ -->
+    <section class="secao quiz" id="quiz">
+
+        <span class="etiqueta">03 · MOMENTO DE REFLEXÃO</span>
+
+        <h2>Mas, afinal, como está o seu bem-estar??</h2>
+
+        <p>
+           Responda a cinco perguntas do Mind Plan, iniciativa do Serviço Nacional de Saúde do Reino Unido, e receba dicas personalizadas para
+            cuidar da saúde mental, melhorar seus hábitos e encontrar mais equilíbrio na rotina.
+        </p>
+
+        <!-- ALTERAR AQUI: coloque o link real do site do quiz -->
+        <a href="https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/your-mind-plan-quiz/?utm_source=chatgpt.com" 
+        target="_blank" rel="noopener noreferrer" class="botao">
+            Acessar o quiz ↗
+        </a>
+
+        <small>
+           Fonte: NHS – Every Mind Matters. Ferramenta de orientação sobre bem-estar mental. <strong>Não substitui avaliação profissional.</strong>
+        </small>
+
+    </section>
+
+
+    <!-- DICAS -->
+    <section class="secao" id="dicas">
+
+        <span class="etiqueta">04 · AUTOCUIDADO</span>
+
+        <h2>Pequenas atitudes, grandes mudanças.</h2>
+
+        <div class="dicas-grid">
+
+            <article>
+                <span>📋</span>
+                <h3>Organize prioridades</h3>
+                <p>Divida suas tarefas em pequenas etapas.</p>
+            </article>
+
+            <article>
+                <span>☕</span>
+                <h3>Faça pausas</h3>
+                <p>Reserve momentos para descansar.</p>
+            </article>
+
+            <article>
+                <span>🌙</span>
+                <h3>Cuide do sono</h3>
+                <p>Valorize uma rotina de descanso.</p>
+            </article>
+
+            <article>
+                <span>♡</span>
+                <h3>Peça ajuda</h3>
+                <p>Procure apoio quando necessário.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+        <h3>Sua mente também importa ♡</h3>
+        <p>Projeto acadêmico · UC Neurociência Comportamental</p>
+    </footer>
+
+</body>
+
+</html>
